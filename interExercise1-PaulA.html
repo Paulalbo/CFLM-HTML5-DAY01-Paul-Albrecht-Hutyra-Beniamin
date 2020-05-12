@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+	<title>Form</title>
+<style type="text/css">
+*{
+	padding: 5px;
+	margin: 0px;
+}
+
+
+</style>
+</head>
+<body>
+<h1>Contact</h1>
+<table>
+	<tr>
+		<td><p>First Name:</p> <form><input type="text" name="firstname" placeholder="First name"></form></td>
+		<td><p>Last Name:</p> <form><input type="text" name="lastname" placeholder="Last name"></form></td>
+	</tr>
+	<tr>
+		<td colspan="2"><p>E-Mail:</p><br><form><input style="width: 100%;" type="text" name="email" placeholder="E-Mail"></form></td>
+	</tr>
+	<tr>
+		<td><p>Reason for Contact:</p><form>
+			<input type="radio" name="gender" value="male" checked>Privat <input type="radio" name="gender" value="female">Business <input type="radio" name="gender" value="other">Other 
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><p>Comment:</p>
+			<form>
+				<textarea name="message" style="width: 100%;" rows="10" cols="30">Lorem ipsum default text.</textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
